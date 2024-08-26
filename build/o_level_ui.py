@@ -1707,6 +1707,9 @@ class Ui_OLevelResultWindow(object):
         self.grade_24.setObjectName("grade_24")
         self.grade_24.addItem("")
         self.pushButton = QtWidgets.QPushButton(self.widget)
+        self.pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        
+
         self.pushButton.setGeometry(QtCore.QRect(20, 440, 75, 31))
         self.pushButton.setStyleSheet("background: #F4F5F6;\n"
 "padding: 5px; \n"
@@ -1718,6 +1721,8 @@ class Ui_OLevelResultWindow(object):
 "")
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.widget)
+        self.pushButton_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+
         self.pushButton_2.setGeometry(QtCore.QRect(420, 440, 91, 31))
         self.pushButton_2.setStyleSheet("background: #00A272;\n"
 "padding: 5px; \n"
@@ -1802,11 +1807,14 @@ class Ui_OLevelResultWindow(object):
         self.pushButton.setText(_translate("OLevelResultWindow", " Back "))
 
 
-        self.pushButton.clicked.connect(self.get_started)
+       
 
         self.pushButton_2.setText(_translate("OLevelResultWindow", "Next"))
         self.lineEdit.setText(_translate("OLevelResultWindow", "© Copyright 2024 uas.abu.edu.ng. All rights reserved."))
 
+
+        self.pushButton.clicked.connect(self.get_started)
+        self.pushButton_2.clicked.connect(self.get_intrest)
 
     def get_started(self):
         print('you clicked')
@@ -1816,6 +1824,16 @@ class Ui_OLevelResultWindow(object):
         ui = student_profile_ui.Ui_StudentProfileWindow()
         ui.setupUi(self.profile_window)
         self.profile_window.show()
+        OLevelResultWindow.close()
+            
+    def get_intrest(self):
+        print('you clicked')
+        import interest_ui
+        from PyQt5.QtWidgets import QMainWindow
+        self.interest_window = QMainWindow()
+        ui = interest_ui.Ui_InstrestWindow()
+        ui.setupUi(self.interest_window)
+        self.interest_window.show()
         OLevelResultWindow.close()
             
 if __name__ == "__main__":
