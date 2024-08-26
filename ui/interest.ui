@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InstrestWindow</class>
+ <widget class="QMainWindow" name="InstrestWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>574</width>
+    <height>671</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">backgroundColor: white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>151</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:  #00A272;
+font-size: 70px;
+font-weight: bold; 
+letter-spacing: 2px; 
+
+</string>
+    </property>
+    <property name="text">
+     <string>UAS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>70</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 10px;</string>
+    </property>
+    <property name="text">
+     <string>University  Admission  Software</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>521</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;</string>
+    </property>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: 600; 
+color: #2C2F44;
+font-size: 20px;</string>
+     </property>
+     <property name="text">
+      <string>Tell us about your Interests and Preferences</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>331</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #687285;
+</string>
+     </property>
+     <property name="text">
+      <string>Help us understand your academic interests and  
+university preferences to provide personalized recommendations.</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>461</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Preferred Faculty of Study</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>100</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Preferred University Type</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cmbCourseOfStudy">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#cmbCourseOfStudy {
+
+	padding: 3px;
+	border-radius: 3px; 
+	border: 1px solid #18C474; 
+	
+	}
+
+	#cmbCourseOfStudy{
+		padding-left: 10px;
+	}
+	
+	#cmbCourseOfStudy::drop-down {
+		border: 0px;
+	}
+	
+	#cmbCourseOfStudy::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	#cmbCourseOfStudy:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>- Select - </string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Art</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Scient</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Socials Science</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Business</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="cmbUniversityType">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>120</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#cmbUniversityType {
+
+	padding: 3px;
+	border-radius: 3px; 
+	border: 1px solid #18C474; 
+	
+	}
+	
+
+	#cmbUniversityType{
+		padding-left: 10px;
+	}
+
+	#cmbUniversityType::drop-down {
+		border: 0px;
+	}
+	
+	#cmbUniversityType::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	#cmbUniversityType:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>- Select -</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Federal University</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>State University</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Private University</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>170</y>
+        <width>75</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+</string>
+      </property>
+      <property name="text">
+       <string> Back </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>170</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: #00A272;
+padding: 5px; 
+border-radius: 3px;
+color: #fff;
+font-weight: 400;
+font-size: 10px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>Find Your Best Match</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>620</y>
+      <width>571</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">text-align: center;</string>
+    </property>
+    <property name="text">
+     <string>© Copyright 2024 uas.abu.edu.ng. All rights reserved.</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
