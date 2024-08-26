@@ -1,6 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-
+import resource_rc
 class Ui_StudentProfileWindow(object):
     def setupUi(self, StudentProfileWindow):
         StudentProfileWindow.setObjectName("StudentProfileWindow")
@@ -223,8 +223,19 @@ class Ui_StudentProfileWindow(object):
         self.label_8.setText(_translate("StudentProfileWindow", "Tell us about yourself"))
         self.label_9.setText(_translate("StudentProfileWindow", "We need a few details to help match you with the best universities."))
         self.lineEdit.setText(_translate("StudentProfileWindow", "© Copyright 2024 uas.abu.edu.ng. All rights reserved."))
-import resource_rc
 
+        self.btnProfileNext.clicked.connect(self.go_to_level_ui)
+
+
+    def go_to_level_ui(self):
+        import o_level_ui
+        from PyQt5.QtWidgets import QMainWindow
+        self.o_level_window = QMainWindow()
+        ui = o_level_ui.Ui_OLevelResultWindow()
+        ui.setupUi(self.o_level_window)
+        self.o_level_window.show()
+        StudentProfileWindow.close()
+            
 
 if __name__ == "__main__":
     import sys

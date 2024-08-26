@@ -97,6 +97,8 @@ class Ui_HomeWindow(object):
         self.btnGetStarted.setText(_translate("HomeWindow", "Get Started"))
         self.lineEdit.setText(_translate("HomeWindow", "© Copyright 2024 uas.abu.edu.ng. All rights reserved."))
 
+    
+
     def get_started(self):
         import student_profile_ui
         from PyQt5.QtWidgets import QMainWindow
