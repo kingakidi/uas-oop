@@ -227,14 +227,30 @@ class Ui_StudentProfileWindow(object):
         self.btnProfileNext.clicked.connect(self.go_to_level_ui)
 
 
+#     def go_to_level_ui(self):
+#         import o_level_ui
+#         from PyQt5.QtWidgets import QMainWindow
+#         self.o_level_window = QMainWindow()
+#         ui = o_level_ui.Ui_OLevelResultWindow()
+#         ui.setupUi(self.o_level_window)
+#         self.o_level_window.show()
+#         StudentProfileWindow.close()
+
     def go_to_level_ui(self):
+        print('you clicked')
         import o_level_ui
         from PyQt5.QtWidgets import QMainWindow
+
+        # Create an instance of the new window
         self.o_level_window = QMainWindow()
         ui = o_level_ui.Ui_OLevelResultWindow()
         ui.setupUi(self.o_level_window)
+
+        # Show the new window
         self.o_level_window.show()
-        StudentProfileWindow.close()
+
+        # Close the current window
+        self.close()
             
 
 if __name__ == "__main__":
