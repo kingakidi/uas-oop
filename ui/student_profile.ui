@@ -269,12 +269,7 @@ QComboBox QListView::item:selected{
       </property>
       <item>
        <property name="text">
-        <string>Kogi</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Abuja</string>
+        <string>- Select -</string>
        </property>
       </item>
      </widget>
@@ -333,6 +328,11 @@ QComboBox QListView::item:selected{
       <property name="frame">
        <bool>false</bool>
       </property>
+      <item>
+       <property name="text">
+        <string>- Select - </string>
+       </property>
+      </item>
      </widget>
      <widget class="QLineEdit" name="firstName">
       <property name="geometry">
