@@ -29,12 +29,18 @@ class StudentProfile(QMainWindow):
 class OLevelWindow(QMainWindow):  
     def __init__(self):
         super(OLevelWindow, self).__init__()
-        loadUi("ui/student_profile.ui", self)  
+        loadUi("ui/o_level.ui", self)  
 
-        self.btnProfileNext.clicked.connect(self.go_to_screen_1)
+        self.btnNext.clicked.connect(self.go_to_interest_window)
+        self.btnBack.clicked.connect(self.back_to_profile_window)
 
-    def go_to_screen_1(self):
+    def back_to_profile_window(self):
+        widget.setCurrentIndex(widget.currentIndex()-1)
+
+
+    def go_to_interest_window(self):
         widget.setCurrentIndex(widget.currentIndex()+1)
+
 
 
 # interest screen screen 

@@ -2342,7 +2342,7 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="btnBack">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -2365,7 +2365,7 @@ font-size: 10px;
       <string> Back </string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="btnNext">
      <property name="geometry">
       <rect>
        <x>420</x>
