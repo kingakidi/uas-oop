@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>888</width>
+    <width>767</width>
     <height>671</height>
    </rect>
   </property>
@@ -20,7 +20,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>250</x>
       <y>10</y>
       <width>201</width>
       <height>81</height>
@@ -41,7 +41,7 @@ letter-spacing: 2px;
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>260</x>
       <y>90</y>
       <width>191</width>
       <height>16</height>
@@ -57,8 +57,8 @@ letter-spacing: 2px;
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>130</y>
+      <x>60</x>
+      <y>120</y>
       <width>581</width>
       <height>371</height>
      </rect>
@@ -203,12 +203,12 @@ university preferences to provide personalized recommendations.</string>
       </item>
       <item>
        <property name="text">
-        <string>Art</string>
+        <string>Science</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>Scient</string>
+        <string>Art</string>
        </property>
       </item>
       <item>
@@ -341,7 +341,7 @@ font-size: 10px;
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>60</x>
       <y>530</y>
       <width>581</width>
       <height>41</height>
