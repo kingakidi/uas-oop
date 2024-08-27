@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>573</width>
+    <width>858</width>
     <height>673</height>
    </rect>
   </property>
@@ -20,15 +20,15 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>320</x>
       <y>10</y>
-      <width>151</width>
-      <height>61</height>
+      <width>201</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">color:  #00A272;
-font-size: 70px;
+font-size: 90px;
 font-weight: bold; 
 letter-spacing: 2px; 
 
@@ -41,14 +41,14 @@ letter-spacing: 2px;
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>70</y>
-      <width>161</width>
+      <x>330</x>
+      <y>90</y>
+      <width>191</width>
       <height>16</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font-size: 10px;</string>
+     <string notr="true">font-size: 13px;</string>
     </property>
     <property name="text">
      <string>University  Adminssion  Software</string>
@@ -57,10 +57,10 @@ letter-spacing: 2px;
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>100</y>
-      <width>521</width>
-      <height>491</height>
+      <x>20</x>
+      <y>130</y>
+      <width>821</width>
+      <height>431</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -102,118 +102,11 @@ font-size: 10px;</string>
 that best match your profile.</string>
      </property>
     </widget>
-    <widget class="QLabel" name="lblH1">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>100</y>
-       <width>101</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-</string>
-     </property>
-     <property name="text">
-      <string>University Name</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblH_2">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>100</y>
-       <width>101</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;</string>
-     </property>
-     <property name="text">
-      <string>Location</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblh_3">
-     <property name="geometry">
-      <rect>
-       <x>220</x>
-       <y>100</y>
-       <width>101</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-</string>
-     </property>
-     <property name="text">
-      <string>Match Percentage</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblH_5">
-     <property name="geometry">
-      <rect>
-       <x>420</x>
-       <y>100</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-</string>
-     </property>
-     <property name="text">
-      <string>Action</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblH_4">
-     <property name="geometry">
-      <rect>
-       <x>320</x>
-       <y>100</y>
-       <width>101</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;</string>
-     </property>
-     <property name="text">
-      <string>Key Features</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="btnBackHome">
      <property name="geometry">
       <rect>
-       <x>370</x>
-       <y>40</y>
+       <x>650</x>
+       <y>20</y>
        <width>141</width>
        <height>41</height>
       </rect>
@@ -248,125 +141,6 @@ border: 0px;</string>
      <property name="title">
       <string/>
      </property>
-     <widget class="QLabel" name="lbl_row_1_10">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>Zaria Kaduna,</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_6">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">
-padding: 5px; 
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-left: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>Ahmadu Bello University</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_8">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-border-right: 1px solid #eee;
-
-</string>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://abu.edu.ng&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;View website&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_7">
-      <property name="geometry">
-       <rect>
-        <x>310</x>
-        <y>0</y>
-        <width>91</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>Top-ranked, 
-diverse programs, 
-urban campus</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_9">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>90%</string>
-      </property>
-     </widget>
     </widget>
     <widget class="QGroupBox" name="listUniversityGroup_2">
      <property name="geometry">
@@ -384,126 +158,6 @@ border: 0px;</string>
      <property name="title">
       <string/>
      </property>
-     <widget class="QLabel" name="lbl_row_1_11">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>Zaria Kaduna,</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_12">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">
-padding: 5px; 
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-left: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>University of lagos</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_13">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-border-right: 1px solid #eee;
-text-align: center;
-
-</string>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://abu.edu.ng&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;View website&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_14">
-      <property name="geometry">
-       <rect>
-        <x>310</x>
-        <y>0</y>
-        <width>91</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>Top-ranked, 
-diverse programs, 
-urban campus</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_15">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>90%</string>
-      </property>
-     </widget>
     </widget>
     <widget class="QGroupBox" name="listUniversityGroup_3">
      <property name="geometry">
@@ -521,126 +175,6 @@ border: 0px;</string>
      <property name="title">
       <string/>
      </property>
-     <widget class="QLabel" name="lbl_row_1_26">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>Zaria Kaduna,</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_27">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">
-padding: 5px; 
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-left: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>University of lagos</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_28">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-border-right: 1px solid #eee;
-text-align: center;
-
-</string>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://abu.edu.ng&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;View website&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_29">
-      <property name="geometry">
-       <rect>
-        <x>310</x>
-        <y>0</y>
-        <width>91</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>Top-ranked, 
-diverse programs, 
-urban campus</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_30">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>90%</string>
-      </property>
-     </widget>
     </widget>
     <widget class="QGroupBox" name="listUniversityGroup_4">
      <property name="geometry">
@@ -658,134 +192,27 @@ border: 0px;</string>
      <property name="title">
       <string/>
      </property>
-     <widget class="QLabel" name="lbl_row_1_31">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>Zaria Kaduna,</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_32">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">
-padding: 5px; 
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-left: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>University of lagos</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_33">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-border-right: 1px solid #eee;
-text-align: center;
-
-</string>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://abu.edu.ng&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;View website&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_34">
-      <property name="geometry">
-       <rect>
-        <x>310</x>
-        <y>0</y>
-        <width>91</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>Top-ranked, 
-diverse programs, 
-urban campus</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbl_row_1_35">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>0</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 8px;
-border-bottom: 1px solid #eee;
-border-top: 1px solid #eee; 
-</string>
-      </property>
-      <property name="text">
-       <string>90%</string>
-      </property>
-     </widget>
+    </widget>
+    <widget class="QGroupBox" name="grpShowResult">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>120</y>
+       <width>761</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
     </widget>
    </widget>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>620</y>
-      <width>571</width>
+      <x>20</x>
+      <y>580</y>
+      <width>821</width>
       <height>41</height>
      </rect>
     </property>
