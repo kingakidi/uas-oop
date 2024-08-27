@@ -30,15 +30,11 @@ class ListResultWindow(QMainWindow):
             with open(json_file, "r") as file:
                 results = json.load(file)
         except json.JSONDecodeError:
-            print("Error decoding the JSON file.")
             return None
         except IOError as e:
-            print(f"Error reading the file: {e}.")
             return None
 
         if results is not None:
-            print("Results loaded successfully:")
-            print(results)
             self.populate_table(results)
         else:
             print("Failed to load results.")
