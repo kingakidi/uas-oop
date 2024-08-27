@@ -61,6 +61,7 @@ class IntrestWindow(QMainWindow):
         applicable_universities = self.find_applicable_universities(university_data, o_level_data)
 
         # Save the selected university and course data
+
         try:
             with open("fields data/result.json", "w") as file:
                 json.dump(applicable_universities, file, indent=4)
@@ -75,6 +76,51 @@ class IntrestWindow(QMainWindow):
         """Finds universities and courses that match the O-level results."""
         applicable_universities = {}
         
+        #     this is how the structure of a single requirement looks like 
+        #   "requirements": [
+        #   {
+        #     "subject": "Chemistry",
+        #     "max_grade": "B",
+        #     "percentage": 25
+        #   },
+        #   {
+        #     "subject": "Biology",
+        #     "max_grade": "C",
+        #     "percentage": 20
+        #   },
+        #   {
+        #     "subject": "Mathematics",
+        #     "max_grade": "B",
+        #     "percentage": 25
+        #   },
+        #   {
+        #     "subject": "Physics",
+        #     "max_grade": "C",
+        #     "percentage": 20
+        #   }
+        # ]
+
+        # A - 25, B-20, C-15 D-10 
+
+        # if the o_level_data is like below for example
+
+#         {
+#     "Chemistry": "B",
+#     "Biology": "C",
+#     "Physics": "C",
+#     "Mathematics": "B"
+# }
+
+        # that means the person have 
+
+#         {
+#     "Chemistry": 20,
+#     "Biology": 15,
+#     "Physics": 15,
+#     "Mathematics": 20
+# }
+
+# part ii. what the requirements data show is the minimum score the person must have to enable the search for example if the score from teh olevel for Chemistry is B and the User have A, the person is qualify but if he has C is disqualify for that course 
         for university, faculties in university_data.items():
             applicable_faculties = {}
             for faculty, departments in faculties.items():

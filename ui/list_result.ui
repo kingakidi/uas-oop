@@ -207,35 +207,24 @@ border: 0px;</string>
      </property>
     </widget>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>580</y>
-      <width>821</width>
-      <height>41</height>
+      <x>30</x>
+      <y>569</y>
+      <width>811</width>
+      <height>51</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>7</pointsize>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">text-align: center;</string>
+     <string notr="true">text-align: center;
+background-color: white; </string>
     </property>
     <property name="text">
      <string>© Copyright 2024 uas.abu.edu.ng. All rights reserved.</string>
     </property>
-    <property name="frame">
-     <bool>false</bool>
-    </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
-    </property>
-    <property name="clearButtonEnabled">
-     <bool>false</bool>
     </property>
    </widget>
   </widget>

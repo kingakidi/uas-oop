@@ -150,30 +150,31 @@ university preferences to provide personalized recommendations.</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">#cmbCourseOfStudy {
+       <string notr="true">#cmbFaculty {
 
 	padding: 3px;
 	border-radius: 3px; 
 	border: 1px solid #18C474; 
 	
 	}
+	
 
-	#cmbCourseOfStudy{
+	#cmbFaculty{
 		padding-left: 10px;
 	}
-	
-	#cmbCourseOfStudy::drop-down {
+
+	#cmbFaculty::drop-down {
 		border: 0px;
 	}
 	
-	#cmbCourseOfStudy::down-arrow {
+	#cmbFaculty::down-arrow {
 		image: url(:/icon/arrow-204-32.ico);
 		width: 12px;
 		height: 12px;
 		margin-right:15px;
 	}
 	
-	#cmbCourseOfStudy:on {
+	#cmbFaculty:on {
 		 border: 2px solid #18C474;
 	 }
 	
@@ -338,35 +339,24 @@ font-size: 10px;
      </widget>
     </widget>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>530</y>
+      <y>510</y>
       <width>581</width>
-      <height>41</height>
+      <height>51</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>7</pointsize>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">text-align: center;</string>
+     <string notr="true">text-align: center;
+background-color: white; </string>
     </property>
     <property name="text">
      <string>© Copyright 2024 uas.abu.edu.ng. All rights reserved.</string>
     </property>
-    <property name="frame">
-     <bool>false</bool>
-    </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
-    </property>
-    <property name="clearButtonEnabled">
-     <bool>false</bool>
     </property>
    </widget>
   </widget>

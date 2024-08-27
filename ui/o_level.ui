@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>767</width>
-    <height>673</height>
+    <height>832</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -2379,13 +2379,13 @@ font-weight: 400;
      </property>
     </widget>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>610</y>
+      <y>620</y>
       <width>691</width>
-      <height>41</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
