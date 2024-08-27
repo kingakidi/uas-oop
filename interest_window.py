@@ -121,6 +121,7 @@ class IntrestWindow(QMainWindow):
 # }
 
 # part ii. what the requirements data show is the minimum score the person must have to enable the search for example if the score from teh olevel for Chemistry is B and the User have A, the person is qualify but if he has C is disqualify for that course 
+
         for university, faculties in university_data.items():
             applicable_faculties = {}
             for faculty, departments in faculties.items():
