@@ -1,6 +1,6 @@
-from PyQt5.QtWidgets import QMainWindow, QComboBox
+from PyQt5.QtWidgets import QMainWindow, QComboBox, QLineEdit, QDateEdit
 from PyQt5.uic import loadUi
-
+import json
 
 # list the states in nigeria 
 nigerian_states_lgas = {
@@ -131,6 +131,14 @@ class StudentProfile(QMainWindow):
         # Connect the state combo box to the method that updates the LGA combo box
         self.stateCombo.currentIndexChanged.connect(self.update_lga_combo)
 
+
+        self.firstName = self.findChild(QLineEdit, 'firstName')
+        self.lastName = self.findChild(QLineEdit, 'lastName')
+        self.dateOfBirth = self.findChild(QDateEdit, "dateOfBirth")
+        self.stateOfOrigin = self.findChild(QComboBox, "cmbState")
+        self.lgaOfOrigin = self.findChild(QComboBox, "cmbLga")
+
+
     def update_lga_combo(self):
         # Get the selected state
         selected_state = self.stateCombo.currentText()
@@ -143,4 +151,25 @@ class StudentProfile(QMainWindow):
             self.lgaCombo.addItems(nigerian_states_lgas[selected_state])
 
     def go_next(self):
+        first_name = self.firstName.text()
+        last_name = self.lastName.text()
+        date_of_birth = self.dateOfBirth.date().toString('dd-MM-yyyy')
+        state_of_origin_value = self.stateOfOrigin.currentText()
+        lga_of_origin_value = self.lgaOfOrigin.currentText()
+        # Now you can do whatever you want with these values
+    
+        user_data = {
+            "first_name": first_name,
+            "last_name": last_name,
+            "date_of_birth": date_of_birth,
+            "state_of_origin": state_of_origin_value, 
+            "lga_of_origin":  lga_of_origin_value
+        }
+
+        # Save data to user_data.json
+        with open("fields data/user_data.json", "w") as file:
+            json.dump(user_data, file, indent=4)
+        
+        print("Data saved!")
+
         self.widget.setCurrentIndex(self.widget.currentIndex() + 1)

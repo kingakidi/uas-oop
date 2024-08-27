@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>503</width>
+    <width>767</width>
     <height>624</height>
    </rect>
   </property>
@@ -20,15 +20,15 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>340</x>
       <y>10</y>
-      <width>151</width>
-      <height>61</height>
+      <width>191</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">color:  #00A272;
-font-size: 70px;
+font-size: 90px;
 font-weight: bold; 
 letter-spacing: 2px; 
 
@@ -41,14 +41,14 @@ letter-spacing: 2px;
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>70</y>
-      <width>161</width>
+      <x>340</x>
+      <y>90</y>
+      <width>191</width>
       <height>16</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font-size: 10px;</string>
+     <string notr="true">font-size: 13px;</string>
     </property>
     <property name="text">
      <string>University  Adminssion  Software</string>
@@ -57,9 +57,9 @@ letter-spacing: 2px;
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>120</x>
       <y>120</y>
-      <width>421</width>
+      <width>571</width>
       <height>421</height>
      </rect>
     </property>
@@ -72,9 +72,9 @@ letter-spacing: 2px;
      </property>
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>40</x>
        <y>80</y>
-       <width>361</width>
+       <width>501</width>
        <height>331</height>
       </rect>
      </property>
@@ -151,7 +151,7 @@ letter-spacing: 2px;
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>260</x>
         <y>200</y>
         <width>101</width>
         <height>16</height>
@@ -169,7 +169,7 @@ letter-spacing: 2px;
        <rect>
         <x>10</x>
         <y>280</y>
-        <width>331</width>
+        <width>481</width>
         <height>41</height>
        </rect>
       </property>
@@ -196,7 +196,7 @@ font-size: 10px;
        <rect>
         <x>10</x>
         <y>150</y>
-        <width>331</width>
+        <width>481</width>
         <height>31</height>
        </rect>
       </property>
@@ -214,7 +214,7 @@ border: 1px solid #18C474; </string>
        <rect>
         <x>10</x>
         <y>220</y>
-        <width>151</width>
+        <width>221</width>
         <height>31</height>
        </rect>
       </property>
@@ -276,9 +276,9 @@ QComboBox QListView::item:selected{
      <widget class="QComboBox" name="cmbLga">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>260</x>
         <y>220</y>
-        <width>151</width>
+        <width>231</width>
         <height>31</height>
        </rect>
       </property>
@@ -339,7 +339,7 @@ QComboBox QListView::item:selected{
        <rect>
         <x>10</x>
         <y>30</y>
-        <width>331</width>
+        <width>481</width>
         <height>31</height>
        </rect>
       </property>
@@ -360,7 +360,7 @@ border: 1px solid #18C474; </string>
        <rect>
         <x>10</x>
         <y>90</y>
-        <width>331</width>
+        <width>481</width>
         <height>31</height>
        </rect>
       </property>
@@ -377,7 +377,7 @@ border: 1px solid #18C474; </string>
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>50</x>
        <y>10</y>
        <width>241</width>
        <height>31</height>
@@ -395,7 +395,7 @@ font-size: 20px;</string>
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>50</x>
        <y>40</y>
        <width>361</width>
        <height>16</height>
@@ -413,9 +413,9 @@ font-size: 20px;</string>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>120</x>
       <y>560</y>
-      <width>501</width>
+      <width>571</width>
       <height>41</height>
      </rect>
     </property>
