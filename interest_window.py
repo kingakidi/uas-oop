@@ -28,9 +28,9 @@ class IntrestWindow(QMainWindow):
 
         # Determine the file to load based on university type
         if university_type.lower() == "federal":
-            json_file = "fields data/final_federal_university.json"
+            json_file = "final_federal_university.json"
         elif university_type.lower() == "state":
-            json_file = "fields data/final_state_university.json"
+            json_file = "final_state_university.json"
         else:
             QMessageBox.warning(self, "Invalid University Type", "The selected university type is invalid.")
             return
