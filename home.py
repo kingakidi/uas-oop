@@ -23,7 +23,7 @@ class StudentProfile(QMainWindow):
         self.btnProfileNext.clicked.connect(self.go_to_screen_1)
 
     def go_to_screen_1(self):
-        widget.setCurrentIndex(widget.currentIndex()-1)
+        widget.setCurrentIndex(widget.currentIndex()+1)
 
 # o level screen 
 class OLevelWindow(QMainWindow):  
@@ -34,32 +34,35 @@ class OLevelWindow(QMainWindow):
         self.btnProfileNext.clicked.connect(self.go_to_screen_1)
 
     def go_to_screen_1(self):
-        widget.setCurrentIndex(widget.currentIndex()-1)
+        widget.setCurrentIndex(widget.currentIndex()+1)
 
 
-# intrest screen screen 
+# interest screen screen 
 class IntrestWindow(QMainWindow):  
     def __init__(self):
         super(IntrestWindow, self).__init__()
-        loadUi("ui/intrest_ui.ui", self)  
+        loadUi("ui/interest.ui", self)  
 
-        self.btnProfileNext.clicked.connect(self.go_to_screen_1)
+        self.btnBestMatch.clicked.connect(self.next_to_list_result_screen)
+        self.btnBackToOLevel.clicked.connect(self.back_to_o_level_screen)
 
-    def go_to_screen_1(self):
+    def back_to_o_level_screen(self):
         widget.setCurrentIndex(widget.currentIndex()-1)
+
+    def next_to_list_result_screen(self):
+        widget.setCurrentIndex(widget.currentIndex()+1)
 
 
 # list result screen 
 class ListResultWindow(QMainWindow):  
     def __init__(self):
         super(ListResultWindow, self).__init__()
-        loadUi("ui/intrest_ui.ui", self)  
+        loadUi("ui/list_result.ui", self)  
 
-        self.btnProfileNext.clicked.connect(self.go_to_screen_1)
+        self.btnBackHome.clicked.connect(self.back_home)
 
-    def go_to_screen_1(self):
-        widget.setCurrentIndex(widget.currentIndex()-1)
-
+    def back_home(self):
+       widget.setCurrentIndex(0)
 
 app = QApplication(sys.argv)
 
@@ -69,7 +72,7 @@ widget = QStackedWidget()
 homeWindow = HomeWindow()
 profileScreen = StudentProfile()
 oLevelWindow = OLevelWindow()
-intrestWindow = IntrestWindow() 
+interestWindow = IntrestWindow() 
 listResultWindow = ListResultWindow()
 
 
@@ -79,6 +82,9 @@ widget.setFixedHeight(700)
 widget.setFixedWidth(700)
 widget.addWidget(homeWindow)
 widget.addWidget(profileScreen)
+widget.addWidget(oLevelWindow)
+widget.addWidget(interestWindow)
+widget.addWidget(listResultWindow)
 widget.show()
 
 sys.exit(app.exec_())

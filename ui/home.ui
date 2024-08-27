@@ -14,8 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: white;
-height: 80%; 
+   <string notr="true">height: 80%; 
 width: 80%;</string>
   </property>
   <widget class="QWidget" name="centralwidget">

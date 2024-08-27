@@ -141,7 +141,6 @@ padding: 4px;
 border-radius: 3px; 
 color: white; 
 font-size: 13px; 
-cursor:pointer;
 font-weight: medium;
 font-family: Inter</string>
      </property>
