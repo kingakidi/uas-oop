@@ -1,5 +1,6 @@
-from PyQt5.QtWidgets import QMainWindow, QComboBox
+from PyQt5.QtWidgets import QMainWindow, QComboBox, QMessageBox
 from PyQt5.uic import loadUi
+import json
 
 subject_list =[
     "Accounting", "Agricultural Economics", "Agricultural Engineering", "Agricultural Science",
@@ -49,16 +50,14 @@ class OLevelWindow(QMainWindow):
                 combo.addItems(subject_list)
                 # combo.adjustSize()
         
-
         # grade combo 
         for i in range(1, 10):
             combo = self.findChild(QComboBox, f"grade_{i}")
             if combo:
                 combo.addItems(grade_list)
                 combo.setMinimumContentsLength(max(len(grade) for grade in grade_list))
+
         for i in range(1, 9):
-
-
             combo = self.findChild(QComboBox, f"year_{i}")
             if combo:
                 combo.addItems(year_list)
@@ -70,8 +69,41 @@ class OLevelWindow(QMainWindow):
             if combo:
                 combo.addItems(exam_types)
                 combo.setMinimumContentsLength(max(len(exam) for exam in exam_types))
+
     def back_to_profile_window(self):
         self.widget.setCurrentIndex(self.widget.currentIndex() - 1)
 
     def go_to_interest_window(self):
+        subjects_grades = {}
+        
+        # Grade conversion dictionary
+        grade_conversion = {
+            "A1": "A", "B2": "B", "B3": "B", 
+            "C4": "C", "C5": "C", "C6": "C", 
+            "D7": "D", "E8": "E", "F9": "F"
+        }
+
+        for i in range(1, 10):
+            subject_combo = self.findChild(QComboBox, f"cmbSubject_{i}")
+            grade_combo = self.findChild(QComboBox, f"grade_{i}")
+            
+            if subject_combo and grade_combo:
+                subject = subject_combo.currentText()
+                grade = grade_combo.currentText()
+
+                # Only store if a valid subject and grade are selected
+                if subject != "- Select -" and grade in grade_conversion:
+                    subjects_grades[subject] = grade_conversion[grade]
+
+        # Ensure at least four subjects are added
+        if len(subjects_grades) < 4:
+            QMessageBox.warning(self, "Incomplete Data", "Select at least 4 Unique Subject")
+            return 
+
+    
+        # Save data to user_data.json
+        with open("fields data/user_data.json", "w") as file:
+            json.dump(subjects_grades, file, indent=4)
+        
+        # Proceed to the next window
         self.widget.setCurrentIndex(self.widget.currentIndex() + 1)
