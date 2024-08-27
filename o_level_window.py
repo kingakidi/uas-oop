@@ -102,7 +102,7 @@ class OLevelWindow(QMainWindow):
 
     
         # Save data to user_data.json
-        with open("fields data/user_data.json", "w") as file:
+        with open("fields data/o_level_data.json", "w") as file:
             json.dump(subjects_grades, file, indent=4)
         
         # Proceed to the next window

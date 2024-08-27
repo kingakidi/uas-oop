@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>819</width>
+    <width>888</width>
     <height>671</height>
    </rect>
   </property>
@@ -57,7 +57,7 @@ letter-spacing: 2px;
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>200</x>
       <y>130</y>
       <width>581</width>
       <height>371</height>
@@ -140,7 +140,7 @@ university preferences to provide personalized recommendations.</string>
        <string>Preferred University Type</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="cmbCourseOfStudy">
+     <widget class="QComboBox" name="cmbFaculty">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -213,11 +213,6 @@ university preferences to provide personalized recommendations.</string>
       </item>
       <item>
        <property name="text">
-        <string>Socials Science</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
         <string>Business</string>
        </property>
       </item>
@@ -286,17 +281,12 @@ university preferences to provide personalized recommendations.</string>
       </item>
       <item>
        <property name="text">
-        <string>Federal University</string>
+        <string>Federal</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>State University</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Private University</string>
+        <string>State</string>
        </property>
       </item>
      </widget>
@@ -351,7 +341,7 @@ font-size: 10px;
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>200</x>
       <y>530</y>
       <width>581</width>
       <height>41</height>
