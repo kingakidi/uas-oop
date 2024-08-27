@@ -1,0 +1,258 @@
+{
+  "Ahmadu Bello University, Zaria (ABU)": {
+    "Science": {
+      "Biochemistry": {
+        "requirements": [
+          { "subject": "Chemistry", "max_grade": "B", "percentage": 25 },
+          { "subject": "Biology", "max_grade": "C", "percentage": 20 },
+          { "subject": "Mathematics", "max_grade": "B", "percentage": 25 },
+          { "subject": "Physics", "max_grade": "C", "percentage": 20 }
+        ]
+      },
+      "Biology": {
+        "requirements": [
+          { "subject": "Biology", "max_grade": "A", "percentage": 25 },
+          { "subject": "Chemistry", "max_grade": "B", "percentage": 20 },
+          { "subject": "Mathematics", "max_grade": "C", "percentage": 20 },
+          { "subject": "English", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Botany": {
+        "requirements": [
+          { "subject": "Biology", "max_grade": "A", "percentage": 25 },
+          { "subject": "Chemistry", "max_grade": "C", "percentage": 20 },
+          { "subject": "Mathematics", "max_grade": "B", "percentage": 25 },
+          { "subject": "English", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Chemistry": {
+        "requirements": [
+          { "subject": "Chemistry", "max_grade": "B", "percentage": 25 },
+          { "subject": "Mathematics", "max_grade": "A", "percentage": 25 },
+          { "subject": "Physics", "max_grade": "C", "percentage": 20 },
+          { "subject": "English", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Computer Science": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "A", "percentage": 25 },
+          { "subject": "Physics", "max_grade": "B", "percentage": 20 },
+          { "subject": "Chemistry", "max_grade": "C", "percentage": 20 },
+          { "subject": "English", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Geology": {
+        "requirements": [
+          { "subject": "Geology", "max_grade": "B", "percentage": 25 },
+          { "subject": "Chemistry", "max_grade": "C", "percentage": 20 },
+          { "subject": "Mathematics", "max_grade": "A", "percentage": 25 },
+          { "subject": "Physics", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Mathematics": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "A", "percentage": 25 },
+          { "subject": "Physics", "max_grade": "B", "percentage": 20 },
+          { "subject": "Chemistry", "max_grade": "C", "percentage": 20 },
+          { "subject": "English", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Microbiology": {
+        "requirements": [
+          { "subject": "Biology", "max_grade": "A", "percentage": 25 },
+          { "subject": "Chemistry", "max_grade": "B", "percentage": 20 },
+          { "subject": "Mathematics", "max_grade": "C", "percentage": 20 },
+          { "subject": "English", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Physics": {
+        "requirements": [
+          { "subject": "Physics", "max_grade": "B", "percentage": 25 },
+          { "subject": "Mathematics", "max_grade": "A", "percentage": 25 },
+          { "subject": "Chemistry", "max_grade": "C", "percentage": 20 },
+          { "subject": "English", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Statistics": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "A", "percentage": 25 },
+          { "subject": "Economics", "max_grade": "B", "percentage": 20 },
+          { "subject": "English", "max_grade": "C", "percentage": 20 },
+          { "subject": "Physics", "max_grade": "D", "percentage": 15 }
+        ]
+      }
+    },
+    "Business": {
+      "Accounting": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "A", "percentage": 25 },
+          { "subject": "Economics", "max_grade": "B", "percentage": 20 },
+          { "subject": "English", "max_grade": "C", "percentage": 20 },
+          { "subject": "Government", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Business Administration": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "B", "percentage": 25 },
+          { "subject": "Economics", "max_grade": "A", "percentage": 25 },
+          { "subject": "English", "max_grade": "C", "percentage": 20 },
+          { "subject": "Geography", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Banking and Finance": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "A", "percentage": 25 },
+          { "subject": "Economics", "max_grade": "B", "percentage": 20 },
+          { "subject": "English", "max_grade": "C", "percentage": 20 },
+          { "subject": "Government", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Marketing": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "B", "percentage": 25 },
+          { "subject": "Economics", "max_grade": "C", "percentage": 20 },
+          { "subject": "English", "max_grade": "A", "percentage": 25 },
+          { "subject": "Government", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Management": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "A", "percentage": 25 },
+          { "subject": "Economics", "max_grade": "B", "percentage": 20 },
+          { "subject": "English", "max_grade": "C", "percentage": 20 },
+          { "subject": "Geography", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Insurance": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "B", "percentage": 25 },
+          { "subject": "Economics", "max_grade": "C", "percentage": 20 },
+          { "subject": "English", "max_grade": "A", "percentage": 25 },
+          { "subject": "Government", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Human Resource Management": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "A", "percentage": 25 },
+          { "subject": "Economics", "max_grade": "B", "percentage": 20 },
+          { "subject": "English", "max_grade": "C", "percentage": 20 },
+          { "subject": "Government", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Entrepreneurship": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "B", "percentage": 25 },
+          { "subject": "Economics", "max_grade": "A", "percentage": 25 },
+          { "subject": "English", "max_grade": "C", "percentage": 20 },
+          { "subject": "Geography", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Business Information Systems": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "A", "percentage": 25 },
+          { "subject": "Economics", "max_grade": "B", "percentage": 20 },
+          { "subject": "English", "max_grade": "C", "percentage": 20 },
+          { "subject": "Government", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Public Administration": {
+        "requirements": [
+          { "subject": "Mathematics", "max_grade": "B", "percentage": 25 },
+          { "subject": "Economics", "max_grade": "C", "percentage": 20 },
+          { "subject": "English", "max_grade": "A", "percentage": 25 },
+          { "subject": "Government", "max_grade": "D", "percentage": 15 }
+        ]
+      }
+    },
+    "Arts": {
+      "English Language": {
+        "requirements": [
+          { "subject": "Literature", "max_grade": "A", "percentage": 25 },
+          { "subject": "History", "max_grade": "B", "percentage": 20 },
+          { "subject": "Philosophy", "max_grade": "C", "percentage": 20 },
+          { "subject": "Geography", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "History": {
+        "requirements": [
+          { "subject": "History", "max_grade": "A", "percentage": 25 },
+          { "subject": "English", "max_grade": "B", "percentage": 20 },
+          { "subject": "Government", "max_grade": "C", "percentage": 20 },
+          { "subject": "Geography", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Philosophy": {
+        "requirements": [
+          { "subject": "Philosophy", "max_grade": "A", "percentage": 25 },
+          { "subject": "English", "max_grade": "B", "percentage": 20 },
+          { "subject": "History", "max_grade": "C", "percentage": 20 },
+          { "subject": "Government", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Theatre Arts": {
+        "requirements": [
+          { "subject": "Literature", "max_grade": "A", "percentage": 25 },
+          { "subject": "English", "max_grade": "B", "percentage": 20 },
+          { "subject": "History", "max_grade": "C", "percentage": 20 },
+          { "subject": "Geography", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Linguistics": {
+        "requirements": [
+          { "subject": "Linguistics", "max_grade": "A", "percentage": 25 },
+          { "subject": "English", "max_grade": "B", "percentage": 20 },
+          { "subject": "Literature", "max_grade": "C", "percentage": 20 },
+          { "subject": "History", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Religious Studies": {
+        "requirements": [
+          {
+            "subject": "Religious Studies",
+            "max_grade": "A",
+            "percentage": 25
+          },
+          { "subject": "English", "max_grade": "B", "percentage": 20 },
+          { "subject": "History", "max_grade": "C", "percentage": 20 },
+          { "subject": "Government", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "African Languages": {
+        "requirements": [
+          {
+            "subject": "African Languages",
+            "max_grade": "A",
+            "percentage": 25
+          },
+          { "subject": "English", "max_grade": "B", "percentage": 20 },
+          { "subject": "Literature", "max_grade": "C", "percentage": 20 },
+          { "subject": "History", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Art History": {
+        "requirements": [
+          { "subject": "Art History", "max_grade": "A", "percentage": 25 },
+          { "subject": "English", "max_grade": "B", "percentage": 20 },
+          { "subject": "Literature", "max_grade": "C", "percentage": 20 },
+          { "subject": "History", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Music": {
+        "requirements": [
+          { "subject": "Music", "max_grade": "A", "percentage": 25 },
+          { "subject": "English", "max_grade": "B", "percentage": 20 },
+          { "subject": "Literature", "max_grade": "C", "percentage": 20 },
+          { "subject": "History", "max_grade": "D", "percentage": 15 }
+        ]
+      },
+      "Cultural Studies": {
+        "requirements": [
+          { "subject": "Cultural Studies", "max_grade": "A", "percentage": 25 },
+          { "subject": "English", "max_grade": "B", "percentage": 20 },
+          { "subject": "History", "max_grade": "C", "percentage": 20 },
+          { "subject": "Geography", "max_grade": "D", "percentage": 15 }
+        ]
+      }
+    }
+  }
+}
