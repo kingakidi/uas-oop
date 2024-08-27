@@ -2189,27 +2189,6 @@ font-size: 10px;
       <string>Next</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>70</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-</string>
-     </property>
-     <property name="placeholderText">
-      <string>Enter Reg No.</string>
-     </property>
-    </widget>
     <widget class="QLineEdit" name="lineEdit_3">
      <property name="geometry">
       <rect>
@@ -2376,6 +2355,27 @@ font-weight: 400;
      </property>
      <property name="placeholderText">
       <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="text">
+      <string>Registration No.</string>
      </property>
     </widget>
    </widget>

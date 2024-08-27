@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QMainWindow, QComboBox, QLineEdit, QDateEdit
+from PyQt5.QtWidgets import QMainWindow, QComboBox, QLineEdit, QDateEdit, QMessageBox
 from PyQt5.uic import loadUi
 import json
 
@@ -151,13 +151,18 @@ class StudentProfile(QMainWindow):
             self.lgaCombo.addItems(nigerian_states_lgas[selected_state])
 
     def go_next(self):
+      # Collect data from inputs
         first_name = self.firstName.text()
         last_name = self.lastName.text()
         date_of_birth = self.dateOfBirth.date().toString('dd-MM-yyyy')
         state_of_origin_value = self.stateOfOrigin.currentText()
         lga_of_origin_value = self.lgaOfOrigin.currentText()
-        # Now you can do whatever you want with these values
-    
+
+        # Check if any field is empty
+        if not first_name or not last_name or not date_of_birth or not state_of_origin_value or not lga_of_origin_value:
+            QMessageBox.warning(self, "Incomplete Data", "All fields are required.")
+            return  # Stop execution here if any field is empty
+        
         user_data = {
             "first_name": first_name,
             "last_name": last_name,
@@ -170,6 +175,5 @@ class StudentProfile(QMainWindow):
         with open("fields data/user_data.json", "w") as file:
             json.dump(user_data, file, indent=4)
         
-        print("Data saved!")
-
+        # Proceed to the next page
         self.widget.setCurrentIndex(self.widget.currentIndex() + 1)
