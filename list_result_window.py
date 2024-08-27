@@ -8,5 +8,6 @@ class ListResultWindow(QMainWindow):
         self.widget = widget
         self.btnBackHome.clicked.connect(self.back_home)
 
+        
     def back_home(self):
         self.widget.setCurrentIndex(0)

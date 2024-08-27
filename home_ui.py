@@ -20,7 +20,7 @@ listResultWindow = ListResultWindow(widget)
 
 # Add screens to the QStackedWidget
 widget.setFixedHeight(700)
-widget.setFixedWidth(700)
+widget.setFixedWidth(800)
 widget.addWidget(homeWindow)
 widget.addWidget(profileScreen)
 widget.addWidget(oLevelWindow)

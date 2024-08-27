@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>573</width>
+    <width>767</width>
     <height>673</height>
    </rect>
   </property>
@@ -20,7 +20,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>310</x>
       <y>10</y>
       <width>151</width>
       <height>61</height>
@@ -41,7 +41,7 @@ letter-spacing: 2px;
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>310</x>
       <y>70</y>
       <width>161</width>
       <height>16</height>
@@ -57,9 +57,9 @@ letter-spacing: 2px;
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>70</x>
       <y>100</y>
-      <width>521</width>
+      <width>691</width>
       <height>491</height>
      </rect>
     </property>
@@ -89,7 +89,7 @@ font-size: 20px;</string>
       <rect>
        <x>30</x>
        <y>40</y>
-       <width>361</width>
+       <width>541</width>
        <height>16</height>
       </rect>
      </property>
@@ -101,33 +101,12 @@ font-size: 20px;</string>
       <string>Select your subjects and enter your grades to help us match you with the best universities.</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>70</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-</string>
-     </property>
-     <property name="text">
-      <string>Registration No</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>150</x>
        <y>70</y>
-       <width>91</width>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
@@ -146,7 +125,7 @@ font-weight: 400;
     <widget class="QLabel" name="label_11">
      <property name="geometry">
       <rect>
-       <x>220</x>
+       <x>360</x>
        <y>70</y>
        <width>91</width>
        <height>31</height>
@@ -167,9 +146,9 @@ font-weight: 400;
     <widget class="QLabel" name="label_12">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>560</x>
        <y>70</y>
-       <width>91</width>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -188,7 +167,7 @@ font-weight: 400;
     <widget class="QLabel" name="label_13">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>460</x>
        <y>70</y>
        <width>91</width>
        <height>31</height>
@@ -206,244 +185,60 @@ font-weight: 400;
       <string>Exam Year</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_4">
+    <widget class="QComboBox" name="cmbSubject_1">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>150</x>
        <y>110</y>
-       <width>91</width>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-
-</string>
-     </property>
-     <property name="text">
-      <string>Enter Reg No.</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_5">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>150</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-
-</string>
-     </property>
-     <property name="text">
-      <string>Enter Reg No.</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_6">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>190</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-
-</string>
-     </property>
-     <property name="text">
-      <string>Enter Reg No.</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_7">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>230</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-
-</string>
-     </property>
-     <property name="text">
-      <string>Enter Reg No.</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_14">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>350</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-
-</string>
-     </property>
-     <property name="text">
-      <string>Enter Reg No.</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_15">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>270</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-
-</string>
-     </property>
-     <property name="text">
-      <string>Enter Reg No.</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_16">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>310</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-
-</string>
-     </property>
-     <property name="text">
-      <string>Enter Reg No.</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_17">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>390</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-
-</string>
-     </property>
-     <property name="text">
-      <string>Enter Reg No.</string>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="cmbSubject">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>110</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">	#cmbSubject {background: #F4F5F6;
-padding: 5px; 
-border-radius: 3px;
-color: #2C2F44;
-font-weight: 400;
-font-size: 10px;
-
-}
-
+      <string notr="true">#cmbSubject_1 {background: #F4F5F6;
+	padding: 5px; 
+	border-radius: 3px;
+	color: #2C2F44;
+	font-weight: 400;
+	font-size: 10px;
 	
-	#cmbSubject::drop-down {
-		border: 0px;
 	}
 	
-	#cmbSubject::down-arrow {
-		image: url(:/icon/arrow-204-32.ico);
-		width: 12px;
-		height: 12px;
-		margin-right:15px;
-	}
-	
-	#cmbSubject:on {
-		 border: 2px solid #18C474;
-	 }
-	
-	QComboBox QListView {
-		font-size: 12px;
-		border:1px solid rgba(0,0,0,10%);
-		padding:5px;
-		background-color: #fff;
-		outline: 0px;  
-	}
-	
-	QComboBox QListView::item{
-		padding-left:10px;
-		background-color:#FFFFFF;
-	}
-	QComboBox QListView::item:hover{
-	   background-color:#1e90ff;
-	}
-	QComboBox QListView::item:selected{
-	   background-color:#1e90ff;
-	}
-</string>
+		
+		#cmbSubject_1::drop-down {
+			border: 0px;
+		}
+		
+		#cmbSubject_1::down-arrow {
+			image: url(:/icon/arrow-204-32.ico);
+			width: 12px;
+			height: 12px;
+			margin-right:15px;
+		}
+		
+		#cmbSubject_1:on {
+			 border: 2px solid #18C474;
+		 }
+		
+		QComboBox QListView {
+			font-size: 12px;
+			border:1px solid rgba(0,0,0,10%);
+			padding:5px;
+			background-color: #fff;
+			outline: 0px;  
+		}
+		
+		QComboBox QListView::item{
+			padding-left:10px;
+			background-color:#FFFFFF;
+		}
+		QComboBox QListView::item:hover{
+		   background-color:#1e90ff;
+		}
+		QComboBox QListView::item:selected{
+		   background-color:#1e90ff;
+		}
+	</string>
      </property>
      <item>
       <property name="text">
@@ -454,9 +249,9 @@ font-size: 10px;
     <widget class="QComboBox" name="cmbSubject_2">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>150</x>
        <y>150</y>
-       <width>91</width>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
@@ -515,9 +310,9 @@ font-size: 10px;
     <widget class="QComboBox" name="cmbSubject_4">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>150</x>
        <y>190</y>
-       <width>91</width>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
@@ -576,9 +371,9 @@ font-size: 10px;
     <widget class="QComboBox" name="cmbSubject_5">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>150</x>
        <y>230</y>
-       <width>91</width>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
@@ -637,9 +432,9 @@ font-size: 10px;
     <widget class="QComboBox" name="cmbSubject_6">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>150</x>
        <y>270</y>
-       <width>91</width>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
@@ -698,9 +493,9 @@ font-size: 10px;
     <widget class="QComboBox" name="cmbSubject_7">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>150</x>
        <y>310</y>
-       <width>91</width>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
@@ -759,9 +554,9 @@ font-size: 10px;
     <widget class="QComboBox" name="cmbSubject_8">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>150</x>
        <y>350</y>
-       <width>91</width>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
@@ -820,9 +615,9 @@ font-size: 10px;
     <widget class="QComboBox" name="cmbSubject_9">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>150</x>
        <y>390</y>
-       <width>91</width>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
@@ -881,7 +676,7 @@ font-size: 10px;
     <widget class="QComboBox" name="grade_1">
      <property name="geometry">
       <rect>
-       <x>220</x>
+       <x>360</x>
        <y>110</y>
        <width>91</width>
        <height>31</height>
@@ -942,7 +737,7 @@ font-size: 10px;
     <widget class="QComboBox" name="grade_2">
      <property name="geometry">
       <rect>
-       <x>220</x>
+       <x>360</x>
        <y>150</y>
        <width>91</width>
        <height>31</height>
@@ -1003,7 +798,7 @@ font-size: 10px;
     <widget class="QComboBox" name="grade_3">
      <property name="geometry">
       <rect>
-       <x>220</x>
+       <x>360</x>
        <y>190</y>
        <width>91</width>
        <height>31</height>
@@ -1064,7 +859,7 @@ font-size: 10px;
     <widget class="QComboBox" name="grade_4">
      <property name="geometry">
       <rect>
-       <x>220</x>
+       <x>360</x>
        <y>230</y>
        <width>91</width>
        <height>31</height>
@@ -1125,7 +920,7 @@ font-size: 10px;
     <widget class="QComboBox" name="grade_5">
      <property name="geometry">
       <rect>
-       <x>220</x>
+       <x>360</x>
        <y>270</y>
        <width>91</width>
        <height>31</height>
@@ -1186,7 +981,7 @@ font-size: 10px;
     <widget class="QComboBox" name="grade_6">
      <property name="geometry">
       <rect>
-       <x>220</x>
+       <x>360</x>
        <y>310</y>
        <width>91</width>
        <height>31</height>
@@ -1247,7 +1042,7 @@ font-size: 10px;
     <widget class="QComboBox" name="grade_7">
      <property name="geometry">
       <rect>
-       <x>220</x>
+       <x>360</x>
        <y>350</y>
        <width>91</width>
        <height>31</height>
@@ -1308,7 +1103,7 @@ font-size: 10px;
     <widget class="QComboBox" name="grade_8">
      <property name="geometry">
       <rect>
-       <x>220</x>
+       <x>360</x>
        <y>390</y>
        <width>91</width>
        <height>31</height>
@@ -1366,10 +1161,10 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_9">
+    <widget class="QComboBox" name="year_7">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>460</x>
        <y>350</y>
        <width>91</width>
        <height>31</height>
@@ -1427,10 +1222,10 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_10">
+    <widget class="QComboBox" name="year_2">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>460</x>
        <y>150</y>
        <width>91</width>
        <height>31</height>
@@ -1488,10 +1283,10 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_11">
+    <widget class="QComboBox" name="year_3">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>460</x>
        <y>190</y>
        <width>91</width>
        <height>31</height>
@@ -1549,10 +1344,10 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_12">
+    <widget class="QComboBox" name="year_4">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>460</x>
        <y>230</y>
        <width>91</width>
        <height>31</height>
@@ -1610,10 +1405,10 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_13">
+    <widget class="QComboBox" name="year_1">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>460</x>
        <y>110</y>
        <width>91</width>
        <height>31</height>
@@ -1671,10 +1466,10 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_14">
+    <widget class="QComboBox" name="year_6">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>460</x>
        <y>310</y>
        <width>91</width>
        <height>31</height>
@@ -1732,10 +1527,10 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_15">
+    <widget class="QComboBox" name="year_5">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>460</x>
        <y>270</y>
        <width>91</width>
        <height>31</height>
@@ -1793,10 +1588,10 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_16">
+    <widget class="QComboBox" name="year_8">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>460</x>
        <y>390</y>
        <width>91</width>
        <height>31</height>
@@ -1854,12 +1649,12 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_17">
+    <widget class="QComboBox" name="cmbExam_7">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>560</x>
        <y>350</y>
-       <width>91</width>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -1915,12 +1710,12 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_18">
+    <widget class="QComboBox" name="cmbExam_2">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>560</x>
        <y>150</y>
-       <width>91</width>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -1976,12 +1771,12 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_19">
+    <widget class="QComboBox" name="cmbExam_3">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>560</x>
        <y>190</y>
-       <width>91</width>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -2037,12 +1832,12 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_20">
+    <widget class="QComboBox" name="cmbExam_4">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>560</x>
        <y>230</y>
-       <width>91</width>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -2098,12 +1893,12 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_21">
+    <widget class="QComboBox" name="cmbExam_1">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>560</x>
        <y>110</y>
-       <width>91</width>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -2159,12 +1954,12 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_22">
+    <widget class="QComboBox" name="cmbExam_6">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>560</x>
        <y>310</y>
-       <width>91</width>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -2220,12 +2015,12 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_23">
+    <widget class="QComboBox" name="cmbExam_5">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>560</x>
        <y>270</y>
-       <width>91</width>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -2281,12 +2076,12 @@ font-size: 10px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="grade_24">
+    <widget class="QComboBox" name="cmbExam_8">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>560</x>
        <y>390</y>
-       <width>91</width>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -2368,9 +2163,9 @@ font-size: 10px;
     <widget class="QPushButton" name="btnNext">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>560</x>
        <y>440</y>
-       <width>91</width>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -2388,13 +2183,202 @@ font-size: 10px;
       <string>Next</string>
      </property>
     </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>270</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>310</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_8">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>350</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_9">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>390</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_10">
+     <property name="geometry">
+      <rect>
+       <x>22</x>
+       <y>110</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_11">
+     <property name="geometry">
+      <rect>
+       <x>22</x>
+       <y>150</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_12">
+     <property name="geometry">
+      <rect>
+       <x>22</x>
+       <y>190</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_13">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>230</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>620</y>
-      <width>571</width>
+      <x>70</x>
+      <y>610</y>
+      <width>691</width>
       <height>41</height>
      </rect>
     </property>
