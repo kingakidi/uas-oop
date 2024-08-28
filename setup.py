@@ -1,35 +1,36 @@
 from cx_Freeze import setup, Executable
 import os
 
-# Define the main script file (entry point)
-main_script = "home.py"
-
-# Include additional files and directories
+# Include the entire "fields data" directory
 include_files = [
-    os.path.join("ui"),  
-    "final_federal_university.json",  
+    "ui",                        
+    "final_federal_university.json",
     "final_state_university.json",
+    "logo.ico",
+    ("fields data", "fields data"),   
 ]
 
-# Setup information
-setup(
-    name="University Application",
-    version="1.0",
-    description="An application for managing universities",
-    options={
-        "build_exe": {
-            "packages": ["os", "sys", "PyQt5"],  
-            "includes": [],  
-            "include_files": include_files,  
-            "excludes": [],  
-        }
-    },
-    executables=[
+# Define the target executable
+executables=[
         Executable(
-            main_script,
+           "home.py",
             base="Win32GUI",  
             target_name="UniversityApp.exe",  
-            icon="path/to/icon.ico"  
+            icon="icon.ico"  
         )
     ]
+
+# Setup configuration
+setup(
+    name="UniversityApp.exe",
+    version="1.0",
+    description="A University Admission System",
+    options={
+        "build_exe": {
+            "packages": ["os", "sys", "json"],  
+            "include_files": include_files,     
+            "excludes": [],            
+        }
+    },
+    executables=executables
 )
