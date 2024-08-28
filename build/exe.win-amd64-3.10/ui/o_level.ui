@@ -1,0 +1,2420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OLevelResultWindow</class>
+ <widget class="QMainWindow" name="OLevelResultWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>767</width>
+    <height>832</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>151</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:  #00A272;
+font-size: 70px;
+font-weight: bold; 
+letter-spacing: 2px; 
+
+</string>
+    </property>
+    <property name="text">
+     <string>UAS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>70</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 10px;</string>
+    </property>
+    <property name="text">
+     <string>University  Adminssion  Software</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>691</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;</string>
+    </property>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: 600; 
+color: #2C2F44;
+font-size: 20px;</string>
+     </property>
+     <property name="text">
+      <string>Enter your O'Level Results</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>541</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #687285;
+</string>
+     </property>
+     <property name="text">
+      <string>Select your subjects and enter your grades to help us match you with the best universities.</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>70</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="text">
+      <string>Subject Name</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>70</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="text">
+      <string>Grade</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>70</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="text">
+      <string>Exam Type</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>70</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="text">
+      <string>Exam Year</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cmbSubject_1">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>110</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#cmbSubject_1 {background: #F4F5F6;
+	padding: 5px; 
+	border-radius: 3px;
+	color: #2C2F44;
+	font-weight: 400;
+	font-size: 10px;
+	
+	}
+	
+		
+		#cmbSubject_1::drop-down {
+			border: 0px;
+		}
+		
+		#cmbSubject_1::down-arrow {
+			image: url(:/icon/arrow-204-32.ico);
+			width: 12px;
+			height: 12px;
+			margin-right:15px;
+		}
+		
+		#cmbSubject_1:on {
+			 border: 2px solid #18C474;
+		 }
+		
+		QComboBox QListView {
+			font-size: 12px;
+			border:1px solid rgba(0,0,0,10%);
+			padding:5px;
+			background-color: #fff;
+			outline: 0px;  
+		}
+		
+		QComboBox QListView::item{
+			padding-left:10px;
+			background-color:#FFFFFF;
+		}
+		QComboBox QListView::item:hover{
+		   background-color:#1e90ff;
+		}
+		QComboBox QListView::item:selected{
+		   background-color:#1e90ff;
+		}
+	</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbSubject_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>150</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#cmbSubject_2 {background: #F4F5F6;
+	padding: 5px; 
+	border-radius: 3px;
+	color: #2C2F44;
+	font-weight: 400;
+	font-size: 10px;
+	
+	}
+	
+		
+		#cmbSubject_2::drop-down {
+			border: 0px;
+		}
+		
+		#cmbSubject_2::down-arrow {
+			image: url(:/icon/arrow-204-32.ico);
+			width: 12px;
+			height: 12px;
+			margin-right:15px;
+		}
+		
+		#cmbSubject_2:on {
+			 border: 2px solid #18C474;
+		 }
+		
+		QComboBox QListView {
+			font-size: 12px;
+			border:1px solid rgba(0,0,0,10%);
+			padding:5px;
+			background-color: #fff;
+			outline: 0px;  
+		}
+		
+		QComboBox QListView::item{
+			padding-left:10px;
+			background-color:#FFFFFF;
+		}
+		QComboBox QListView::item:hover{
+		   background-color:#1e90ff;
+		}
+		QComboBox QListView::item:selected{
+		   background-color:#1e90ff;
+		}
+	</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbSubject_3">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>190</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#cmbSubject_3 {background: #F4F5F6;
+	padding: 5px; 
+	border-radius: 3px;
+	color: #2C2F44;
+	font-weight: 400;
+	font-size: 10px;
+	
+	}
+	
+		
+		#cmbSubject_3::drop-down {
+			border: 0px;
+		}
+		
+		#cmbSubject_3::down-arrow {
+			image: url(:/icon/arrow-204-32.ico);
+			width: 12px;
+			height: 12px;
+			margin-right:15px;
+		}
+		
+		#cmbSubject_3:on {
+			 border: 2px solid #18C474;
+		 }
+		
+		QComboBox QListView {
+			font-size: 12px;
+			border:1px solid rgba(0,0,0,10%);
+			padding:5px;
+			background-color: #fff;
+			outline: 0px;  
+		}
+		
+		QComboBox QListView::item{
+			padding-left:10px;
+			background-color:#FFFFFF;
+		}
+		QComboBox QListView::item:hover{
+		   background-color:#1e90ff;
+		}
+		QComboBox QListView::item:selected{
+		   background-color:#1e90ff;
+		}
+	</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbSubject_4">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>230</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#cmbSubject_4 {background: #F4F5F6;
+	padding: 5px; 
+	border-radius: 3px;
+	color: #2C2F44;
+	font-weight: 400;
+	font-size: 10px;
+	
+	}
+	
+		
+		#cmbSubject_4::drop-down {
+			border: 0px;
+		}
+		
+		#cmbSubject_4::down-arrow {
+			image: url(:/icon/arrow-204-32.ico);
+			width: 12px;
+			height: 12px;
+			margin-right:15px;
+		}
+		
+		#cmbSubject_4:on {
+			 border: 2px solid #18C474;
+		 }
+		
+		QComboBox QListView {
+			font-size: 12px;
+			border:1px solid rgba(0,0,0,10%);
+			padding:5px;
+			background-color: #fff;
+			outline: 0px;  
+		}
+		
+		QComboBox QListView::item{
+			padding-left:10px;
+			background-color:#FFFFFF;
+		}
+		QComboBox QListView::item:hover{
+		   background-color:#1e90ff;
+		}
+		QComboBox QListView::item:selected{
+		   background-color:#1e90ff;
+		}
+	</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbSubject_5">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>270</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#cmbSubject_5 {background: #F4F5F6;
+	padding: 5px; 
+	border-radius: 3px;
+	color: #2C2F44;
+	font-weight: 400;
+	font-size: 10px;
+	
+	}
+	
+		
+		#cmbSubject_5::drop-down {
+			border: 0px;
+		}
+		
+		#cmbSubject_5::down-arrow {
+			image: url(:/icon/arrow-204-32.ico);
+			width: 12px;
+			height: 12px;
+			margin-right:15px;
+		}
+		
+		#cmbSubject_5:on {
+			 border: 2px solid #18C474;
+		 }
+		
+		QComboBox QListView {
+			font-size: 12px;
+			border:1px solid rgba(0,0,0,10%);
+			padding:5px;
+			background-color: #fff;
+			outline: 0px;  
+		}
+		
+		QComboBox QListView::item{
+			padding-left:10px;
+			background-color:#FFFFFF;
+		}
+		QComboBox QListView::item:hover{
+		   background-color:#1e90ff;
+		}
+		QComboBox QListView::item:selected{
+		   background-color:#1e90ff;
+		}
+	</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbSubject_6">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>310</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#cmbSubject_6 {background: #F4F5F6;
+	padding: 5px; 
+	border-radius: 3px;
+	color: #2C2F44;
+	font-weight: 400;
+	font-size: 10px;
+	
+	}
+	
+		
+		#cmbSubject_6::drop-down {
+			border: 0px;
+		}
+		
+		#cmbSubject_6::down-arrow {
+			image: url(:/icon/arrow-204-32.ico);
+			width: 12px;
+			height: 12px;
+			margin-right:15px;
+		}
+		
+		#cmbSubject_6:on {
+			 border: 2px solid #18C474;
+		 }
+		
+		QComboBox QListView {
+			font-size: 12px;
+			border:1px solid rgba(0,0,0,10%);
+			padding:5px;
+			background-color: #fff;
+			outline: 0px;  
+		}
+		
+		QComboBox QListView::item{
+			padding-left:10px;
+			background-color:#FFFFFF;
+		}
+		QComboBox QListView::item:hover{
+		   background-color:#1e90ff;
+		}
+		QComboBox QListView::item:selected{
+		   background-color:#1e90ff;
+		}
+	</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbSubject_7">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>350</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#cmbSubject_7 {background: #F4F5F6;
+	padding: 5px; 
+	border-radius: 3px;
+	color: #2C2F44;
+	font-weight: 400;
+	font-size: 10px;
+	
+	}
+	
+		
+		#cmbSubject_7::drop-down {
+			border: 0px;
+		}
+		
+		#cmbSubject_7::down-arrow {
+			image: url(:/icon/arrow-204-32.ico);
+			width: 12px;
+			height: 12px;
+			margin-right:15px;
+		}
+		
+		#cmbSubject_7:on {
+			 border: 2px solid #18C474;
+		 }
+		
+		QComboBox QListView {
+			font-size: 12px;
+			border:1px solid rgba(0,0,0,10%);
+			padding:5px;
+			background-color: #fff;
+			outline: 0px;  
+		}
+		
+		QComboBox QListView::item{
+			padding-left:10px;
+			background-color:#FFFFFF;
+		}
+		QComboBox QListView::item:hover{
+		   background-color:#1e90ff;
+		}
+		QComboBox QListView::item:selected{
+		   background-color:#1e90ff;
+		}
+	</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbSubject_8">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>390</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#cmbSubject_8 {background: #F4F5F6;
+	padding: 5px; 
+	border-radius: 3px;
+	color: #2C2F44;
+	font-weight: 400;
+	font-size: 10px;
+	
+	}
+	
+		
+		#cmbSubject_8::drop-down {
+			border: 0px;
+		}
+		
+		#cmbSubject_8::down-arrow {
+			image: url(:/icon/arrow-204-32.ico);
+			width: 12px;
+			height: 12px;
+			margin-right:15px;
+		}
+		
+		#cmbSubject_8:on {
+			 border: 2px solid #18C474;
+		 }
+		
+		QComboBox QListView {
+			font-size: 12px;
+			border:1px solid rgba(0,0,0,10%);
+			padding:5px;
+			background-color: #fff;
+			outline: 0px;  
+		}
+		
+		QComboBox QListView::item{
+			padding-left:10px;
+			background-color:#FFFFFF;
+		}
+		QComboBox QListView::item:hover{
+		   background-color:#1e90ff;
+		}
+		QComboBox QListView::item:selected{
+		   background-color:#1e90ff;
+		}
+	</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="grade_1">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>110</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="grade_2">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>150</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="grade_3">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>190</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="grade_4">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>230</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="grade_5">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>270</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="grade_6">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>310</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="grade_7">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>350</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="grade_8">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>390</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="year_7">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>350</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="year_2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>150</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="year_3">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>190</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="year_4">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>230</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="year_1">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>110</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="year_6">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>310</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="year_5">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>270</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="year_8">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>390</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbExam_7">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>350</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbExam_2">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>150</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbExam_3">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>190</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbExam_4">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>230</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbExam_1">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>110</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbExam_6">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>310</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbExam_5">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>270</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbExam_8">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>390</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	QComboBox {background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+}
+
+	
+	QComboBox::drop-down {
+		border: 0px;
+	}
+	
+	QComboBox::down-arrow {
+		image: url(:/icon/arrow-204-32.ico);
+		width: 12px;
+		height: 12px;
+		margin-right:15px;
+	}
+	
+	QComboBox:on {
+		 border: 2px solid #18C474;
+	 }
+	
+	QComboBox QListView {
+		font-size: 12px;
+		border:1px solid rgba(0,0,0,10%);
+		padding:5px;
+		background-color: #fff;
+		outline: 0px;  
+	}
+	
+	QComboBox QListView::item{
+		padding-left:10px;
+		background-color:#FFFFFF;
+	}
+	QComboBox QListView::item:hover{
+	   background-color:#1e90ff;
+	}
+	QComboBox QListView::item:selected{
+	   background-color:#1e90ff;
+	}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Select - </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="btnBack">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>440</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+font-size: 10px;
+
+</string>
+     </property>
+     <property name="text">
+      <string> Back </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnNext">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>440</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #00A272;
+padding: 5px; 
+border-radius: 3px;
+color: #fff;
+font-weight: 400;
+font-size: 10px;
+
+</string>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>270</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>310</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_8">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>350</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_9">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>390</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_10">
+     <property name="geometry">
+      <rect>
+       <x>22</x>
+       <y>110</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_11">
+     <property name="geometry">
+      <rect>
+       <x>22</x>
+       <y>150</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_12">
+     <property name="geometry">
+      <rect>
+       <x>22</x>
+       <y>190</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_13">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>230</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Reg No.</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #F4F5F6;
+padding: 5px; 
+border-radius: 3px;
+color: #2C2F44;
+font-weight: 400;
+</string>
+     </property>
+     <property name="text">
+      <string>Registration No.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>620</y>
+      <width>691</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">text-align: center;</string>
+    </property>
+    <property name="text">
+     <string>© Copyright 2024 uas.abu.edu.ng. All rights reserved.</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

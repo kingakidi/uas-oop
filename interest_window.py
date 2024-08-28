@@ -60,7 +60,6 @@ class IntrestWindow(QMainWindow):
         # Find applicable universities and courses
         applicable_universities = self.find_applicable_universities(university_data, o_level_data)
 
-        print("this are your applicable university", applicable_universities)
 
         # Save the selected university and course data
 
