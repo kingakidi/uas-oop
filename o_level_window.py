@@ -100,6 +100,7 @@ class OLevelWindow(QMainWindow):
             QMessageBox.warning(self, "Incomplete Data", "Select at least 4 Unique Subject")
             return 
 
+        
     
         # Save data to user_data.json
         with open("fields data/o_level_data.json", "w") as file:

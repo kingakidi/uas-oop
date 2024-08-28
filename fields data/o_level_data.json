@@ -1,6 +1,6 @@
 {
-  "Physics": "A",
-  "Biology": "A",
-  "Chemistry": "A",
-  "Mathematics": "B"
+    "Chemistry": "B",
+    "Biology": "C",
+    "Physics": "B",
+    "Mathematics": "B"
 }

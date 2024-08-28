@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>858</width>
+    <width>833</width>
     <height>673</height>
    </rect>
   </property>
@@ -20,7 +20,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>340</x>
       <y>10</y>
       <width>201</width>
       <height>81</height>
@@ -41,7 +41,7 @@ letter-spacing: 2px;
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>340</x>
       <y>90</y>
       <width>191</width>
       <height>16</height>
@@ -57,9 +57,9 @@ letter-spacing: 2px;
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>70</x>
       <y>130</y>
-      <width>821</width>
+      <width>701</width>
       <height>431</height>
      </rect>
     </property>
@@ -105,7 +105,7 @@ that best match your profile.</string>
     <widget class="QPushButton" name="btnBackHome">
      <property name="geometry">
       <rect>
-       <x>650</x>
+       <x>530</x>
        <y>20</y>
        <width>141</width>
        <height>41</height>
@@ -198,7 +198,7 @@ border: 0px;</string>
       <rect>
        <x>30</x>
        <y>120</y>
-       <width>761</width>
+       <width>631</width>
        <height>291</height>
       </rect>
      </property>
@@ -210,9 +210,9 @@ border: 0px;</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>70</x>
       <y>569</y>
-      <width>811</width>
+      <width>701</width>
       <height>51</height>
      </rect>
     </property>
