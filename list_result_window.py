@@ -35,12 +35,13 @@ class ListResultWindow(QMainWindow):
         except IOError as e:
             return None
 
-        if results is not None:
-            
-          
+        if results is None or not results:
+            # Display the message "Your Course did not match any courses"
+            table_item = QTableWidgetItem("Your Course did not match any courses")
+            self.tableWidget.setItem(0, 0, table_item)
+            self.tableWidget.resizeRowsToContents()
+        else:
             self.populate_table(results)
-        
-
     def populate_table(self, data):
         if not data:
             return
